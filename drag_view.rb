@@ -1,3 +1,16 @@
+# Usage:
+# drag_view = NSDragView.create(options)
+# options:
+#   :frame [Array] - as for any view
+#   :acceptableTypes [Array] - extensions of accepted files
+#   :acceptFolders [Boolean] - should folders be allowed?
+# methods:
+#   acceptableTypes=[Array] - as in options
+#   acceptFolders=[Boolean] - as in options
+# callbacks
+#   onFile(filePath) - called for each file that was dragged(single file per call)
+#   onFiles(filePaths) - called for all files that was dragged(all files in one call)
+
 class NSDragView < NSView
   include HotCocoa::Behaviors
 
